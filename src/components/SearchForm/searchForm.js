@@ -33,7 +33,9 @@ export default function SearchForm({data,setData}){
     }
     return(
         <>
+        <div className="inputSearch">
             <input onChange={doSearch}></input><button onClick={toggleGo}>Search !</button>
+        </div>
         </>
     )
 }
