@@ -2,7 +2,7 @@
 	min-height: 100vh;
 }
 .App {
-	text-align: center;
+	/* text-align: center; */
 }
 
 .App-logo {
@@ -96,4 +96,19 @@
 	border-radius: 4px;
 	background-color: white;
   }
-  
+
+
+.bloc-un{
+	margin:auto;
+	width: 80%;
+	
+}
+
+.bloc-info{
+	display: flex;
+    flex-direction: row;
+}
+
+.image-meteo{
+	width: 20%;
+}
