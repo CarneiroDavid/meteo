@@ -1,0 +1,99 @@
+#root{
+	min-height: 100vh;
+}
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 7vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	align-items: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+.App-main{
+	min-height:75%;
+	background-color: #282c34;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	padding:2%;
+}
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.title-name {
+	color: rgb(54, 1, 1);
+	font-weight: bold;
+	width: 75%;
+	margin: auto;
+}
+
+.dark{
+	background-color: purple;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 98;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+.modal {
+	display:block;
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.8);
+	max-height: 100%;
+	margin: 10% auto;
+  }
+  
+.modal-close {
+	position: absolute;
+	top: -0.5rem;
+	right: 0;
+	padding: 5px;
+	border: 0;
+	z-index:1;
+	-webkit-appearance: none;
+	background: none;
+	color: rgb(249, 7, 7);
+	cursor: pointer;
+  }
+  
+.modal-body {
+	padding: 1.25rem 1.5rem;
+	border-radius: 4px;
+	background-color: white;
+  }
+  
