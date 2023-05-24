@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '../../VS_logo.svg.png'
+import logo from '../../VS_logo.svg3.png'
 function Navigation({darkMode,toggleDarkMode}) {
 	return (
 		<nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,14 +13,11 @@ function Navigation({darkMode,toggleDarkMode}) {
 					<li className="nav-item">
 						<Link className='nav-link active' aria-current="page" to='/'>Accueil</Link>
 					</li>
+				</ul>
 					<li className="nav-item">
 					<button className="btn btn-primary mt-2" onClick={toggleDarkMode}>{ darkMode ? 'Mode Jour':'Mode Nuit'}</button>
 					</li>
-				</ul>
-				<form className="d-flex" role="search">
-					<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-					<button className="btn btn-outline-success" type="submit">Search</button>
-				</form>
+				
 				</div>
 			</div>
 		</nav>
