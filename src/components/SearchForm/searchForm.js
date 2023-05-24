@@ -24,7 +24,7 @@ export default function SearchForm({data,setData}){
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q='+search+'&lang=fr&appid=baf6839fd81690d95680d68f248e401a') 
+            const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q='+search+'&lang=fr&units=metric&appid=baf6839fd81690d95680d68f248e401a') 
             setData(response.data)
         } catch (error) {
             console.error(error);
